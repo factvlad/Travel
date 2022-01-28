@@ -1,0 +1,64 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  padding: 10px 0px;
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 55px;
+  }
+
+  &__logo {
+  }
+
+  &__img {
+  }
+
+  &__menu {
+    flex: 1 1 auto;
+  }
+
+  &__lang {
+  }
+
+  &__button {
+  }
+
+  &__slider {
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__slider-item {
+  }
+
+  &__slider-img {
+  }
+}
+.menu {
+  &__list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px;
+    row-gap: 5px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+.slider {
+  &__button {
+  }
+}
