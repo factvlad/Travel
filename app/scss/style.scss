@@ -5,19 +5,14 @@
 @import "global";
 
 .header {
-  padding: 10px 0px;
+  max-height: 100vh;
   &__container {
     display: flex;
     align-items: center;
     gap: 20px;
     min-height: 65px;
+    padding: 10px 0px;
   }
-
-  // &__logo {
-  // }
-
-  // &__img {
-  // }
 
   &__menu {
     flex: 1 1 auto;
@@ -46,18 +41,52 @@
     color: $green;
   }
 
-  // &__slider {
-  // }
+  &__content {
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    .content__title {
+      @extend %title-font;
+      color: $white;
+      font-size: 64px;
+      line-height: 87px;
+      margin: 0 auto;
+      max-width: 1037px;
+    }
+    .content__button {
+      margin-top: 40px;
+      background-color: $yellow;
+      border-radius: 30px;
+      border: 0;
+      width: 236px;
+      height: 56px;
+      &-link {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100%;
+        @extend %text-font;
+        color: $black;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 100%;
+      }
+    }
+  }
 
   &__title {
     text-align: center;
   }
 
-  // &__slider-item {
-  // }
-
-  // &__slider-img {
-  // }
+  &__slider-img {
+    width: 100%;
+    max-height: 724px;
+    object-fit: cover;
+  }
 }
 .menu {
   &__list {
@@ -67,9 +96,6 @@
     gap: 56px;
     row-gap: 5px;
   }
-
-  // &__item {
-  // }
 
   &__link {
     @extend %text-font-semibold;
@@ -81,8 +107,8 @@
 }
 
 .slider {
-  text-align: center; 
   &__button {
-
+    position: relative;
+    bottom: 75px;
   }
 }
