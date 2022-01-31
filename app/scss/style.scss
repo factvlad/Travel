@@ -5,7 +5,7 @@
 @import "global";
 
 .header {
-  max-height: 100vh;
+  min-height: 100vh;
   &__container {
     display: flex;
     align-items: center;
@@ -42,21 +42,22 @@
   }
 
   &__content {
-    text-align: center;
-    z-index: 1;
     position: absolute;
-    bottom: 25%;
+    top: 25%;
     right: 0;
     left: 0;
-    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
     .content__title {
       @extend %title-font;
       color: $white;
       font-size: 64px;
       line-height: 87px;
+      width: 1037px;
+      min-width: 350px;
+      position: relative;
       margin: 0 auto;
-      max-width: 1037px;
-      span{
+      span {
         background-color: $green;
         padding: 0 5px;
       }
@@ -102,12 +103,5 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-  }
-}
-
-.slider {
-  &__button {
-    position: relative;
-    bottom: 75px;
   }
 }
