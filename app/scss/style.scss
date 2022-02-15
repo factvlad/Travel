@@ -157,6 +157,37 @@
   }
 }
 
+.popular {
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &-title {
+      @extend %text-font;
+      color: $black;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 100%;
+      margin-bottom: 24px;
+    }
+    &-text {
+      width: 504px;
+    }
+    &-p {
+      @extend %text-font;
+      color: $gray-dark;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      margin-bottom: 20px;
+    }
+    &-img {
+      position: relative;
+      bottom: 62px;
+    }
+  }
+}
 .vip {
   padding-bottom: 126px;
   &__items {
@@ -229,6 +260,7 @@
     line-height: 16px;
     color: $black;
     letter-spacing: 0.3px;
+    cursor: pointer;
   }
 }
 

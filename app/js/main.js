@@ -19,6 +19,14 @@ $(function () {
       "<button  type='button' class='slick-next'><svg  class='next' width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'><rect class='rect-next'width='36' height='36' rx='6' transform='matrix(-1 0 0 1 36.25 0.566406)' fill='white'/><path class='path-next' d='M16.25 24.5664L22.25 18.5664L16.25 12.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></button>",
   });
 
+
+  $(".popular__slider-list").slick({
+    dots: false,
+    fade: true,
+    autoplay: true,
+  });
+
+
   $(".slick-prev").hover(function () {
     $(".rect-prev").toggleClass("actived");
   });
