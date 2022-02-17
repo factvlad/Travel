@@ -190,7 +190,7 @@
   &__slider {
     &-item {
       width: 360px;
-      height: 420px;
+      height: 430px;
       background: #fffdfd;
       box-shadow: 0px 0px 16px rgba(35, 42, 52, 0.18);
       border-radius: 20px;
@@ -264,6 +264,28 @@
       border-radius: 30px;
       padding: 8px 0px;
       float: right;
+    }
+    &-star {
+      &.five {
+        content: "";
+        background-image: url(../images/Star.svg);
+        background-repeat: space;
+        width: 100px;
+        height: 17.5px;
+        position: relative;
+        right: 775px;
+        top: 30px;
+      }
+      &.four{
+        content: "";
+        background-image: url(../images/Star.svg);
+        background-repeat: space;
+        width: 80px;
+        height: 17.5px;
+        position: relative;
+        right: 775px;
+        top: 30px;
+      }
     }
   }
 }
