@@ -22,8 +22,9 @@ $(function () {
 
   $(".popular__slider-list").slick({
     dots: false,
-    fade: true,
     autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
   });
 
 

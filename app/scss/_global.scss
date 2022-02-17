@@ -59,46 +59,66 @@ input {
   }
 }
 
-.slick-prev,
-.slick-next {
-  height: 40px;
-  z-index: 1;
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  left: 630px;
-  top: 200px;
-}
-
-.slick-prev {
-  left: 78%;
-  &::before {
-    content: "";
-    background-image: url(../images/Star.svg);
-    background-repeat: space;
-    width: 100px;
-    height: 17.5px;
+.clients {
+  .slick-prev,
+  .slick-next {
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
     position: absolute;
-    right: 467px;
-    bottom: 10px;
+    left: 630px;
+    top: 200px;
   }
-}
-.slick-next {
-  left: 85.5%;
+
+  .slick-prev {
+    left: 78%;
+    &::before {
+      content: "";
+      background-image: url(../images/Star.svg);
+      background-repeat: space;
+      width: 100px;
+      height: 17.5px;
+      position: absolute;
+      right: 467px;
+      bottom: 10px;
+    }
+  }
+  .slick-next {
+    left: 85.5%;
+  }
+
+  .rect-prev,
+  .rect-next {
+    &.actived {
+      transition: 0.4s;
+      fill: #1dc5a3;
+    }
+  }
+  .path-prev,
+  .path-next {
+    &.actived {
+      transition: 0.4s;
+      stroke: $white;
+    }
+  }
 }
 
-.rect-prev,
-.rect-next {
-  &.actived {
-    transition: 0.4s;
-    fill: #1dc5a3;
+.popular {
+  .slick-slide {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
-}
-.path-prev,
-.path-next {
-  &.actived {
-    transition: 0.4s;
-    stroke: $white;
+
+  .slick-list {
+    // margin-left: -25px;
+    // margin-right: -25px;
+    // margin-top: -15px;
+    // margin-bottom: -15px;
+    pointer-events: none;
   }
+
 }
