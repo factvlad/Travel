@@ -83,10 +83,11 @@ input {
       position: absolute;
       right: 467px;
       bottom: 10px;
+      pointer-events: none;
     }
   }
   .slick-next {
-    left: 85.5%;
+    left: 87.5%;
   }
 
   .rect-prev,
@@ -113,12 +114,43 @@ input {
     margin-bottom: 15px;
   }
 
-  .slick-list {
-    // margin-left: -25px;
-    // margin-right: -25px;
-    // margin-top: -15px;
-    // margin-bottom: -15px;
-    pointer-events: none;
+  .slick-prev,
+  .slick-next {
+    height: 40px;
+    z-index: 1;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: -50px;
   }
 
+  .slick-prev {
+    left: 89%;
+  }
+  .slick-next {
+    left: 93.5%;
+  }
+
+  .rect-prev,
+  .rect-next {
+    &.actived {
+      transition: 0.4s;
+      fill: $white;
+    }
+  }
+  .path-prev,
+  .path-next {
+    &.actived {
+      transition: 0.4s;
+      stroke: $green;
+    }
+  }
+
+  .slick-list {
+    margin-left: -25px;
+    margin-right: -25px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
 }

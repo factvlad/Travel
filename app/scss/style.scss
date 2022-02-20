@@ -158,11 +158,22 @@
 }
 
 .popular {
+  margin-bottom: 126px;
+  &__egp {
+    margin-bottom: 72px;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
-
+    &.turkey {
+      flex-direction: row-reverse;
+    }
     &-title {
+      &.turkey {
+        text-align: center;
+        position: relative;
+        left: 140px;
+      }
       @extend %text-font;
       color: $black;
       font-style: normal;
@@ -266,24 +277,22 @@
       float: right;
     }
     &-star {
-      &.five {
-        content: "";
-        background-image: url(../images/Star.svg);
-        background-repeat: space;
-        width: 100px;
-        height: 17.5px;
-        position: relative;
-        right: 775px;
-        top: 30px;
-      }
-      &.four{
+      content: "";
+      background-image: url(../images/Star.svg);
+      background-repeat: space;
+      width: 100px;
+      height: 17.5px;
+      position: relative;
+      right: 0px;
+      top: 30px;
+      &.four {
         content: "";
         background-image: url(../images/Star.svg);
         background-repeat: space;
         width: 80px;
         height: 17.5px;
         position: relative;
-        right: 775px;
+        right: 0px;
         top: 30px;
       }
     }
