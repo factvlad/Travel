@@ -18,16 +18,16 @@
           <nav class="header__menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link" href="">Популярные</a>
+                <a class="menu__link" href="#popular">Популярные</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">VIP туры</a>
+                <a class="menu__link" href="#vip">VIP туры</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">О нас</a>
+                <a class="menu__link" href="#about">О нас</a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">Контакты</a>
+                <a class="menu__link" href="#contact">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -138,7 +138,7 @@
         </section>
 
 
-        <section class="popular">
+        <section class="popular" id="popular" >
           <div class="popular__container">
             <h2 class="popular__title title">Популярные направления</h2>
             <div class="popular__egp">
@@ -155,7 +155,7 @@
               </div>
               <div class="popular__slider">
                 <h3 class="popular__slider-title">ТОП-5 лучших отелей Египта</h3>
-                <div class="popular__slider-list">
+                <div class="popular__slider-list" id="child">
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
                     <img class="popular__slider-img" src="images/popular/egp/rixos.png" alt="rixos">
@@ -266,16 +266,16 @@
         </section>
   
           
-        <section class="vip">
+        <section class="vip" id="vip">
           <div class="vip__container">
             <h2 class="vip__title title">VIP отдых с Emerald Tours</h2>
             <div class="vip__items">
               <div class="vip__item">
-                <img class="vip__item-img" src="images/vip/1.jpg" alt="" />
+              <a >  <img class="vip__item-img" src="images/vip/1.jpg" alt="" /></a>
                 <p class="vip__item-title">Доминикана</p>
               </div>
               <div class="vip__item">
-                <img class="vip__item-img" src="images/vip/2.jpg" alt="" />
+             <a href="maldives/index.html"><img class="vip__item-img" src="images/vip/2.jpg" alt="" /></a>
                 <p class="vip__item-title">Мальдивы</p>
               </div>
               <div class="vip__item">
@@ -312,7 +312,7 @@
           </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
        <div class="about__container"> 
             <div class="about__content">
               <div class="about__items">
@@ -330,7 +330,7 @@
   </div>
         </section>
 
-<section class="news">
+<section class="news" id="news">
   <div class="news__container">
     <h2 class="new__title title">Новости для туристов</h2>
 <div class="news__content">
@@ -415,7 +415,7 @@
 
       <footer class="footer">
         <div class="footer__container">
-          <div class="footer__contact">
+          <div class="footer__contact " id="contact">
             <div class="footer__items ">
               <h3 class="footer__title">Офис в Одесе:</h3>
               <p class="footer__text">г. Одесса ул. Армейская 18А, офис 404</p>
@@ -424,10 +424,10 @@
             <div class="footer__items">
               <h3 class="footer__title">Меню:</h3>
               <ul class="footer__menu" >
-                <li class="menu__item"><a class="menu__link" href="">Отдых с детьми</a></li>
-                <li class="menu__item"><a class="menu__link" href="">VIP туры</a></li>
-                <li class="menu__item"><a class="menu__link" href="">О нас</a></li>
-                <li class="menu__item"><a class="menu__link" href="">Новости</a></li>
+                <li class="menu__item"><a class="menu__link" href="#child">Отдых с детьми</a></li>
+                <li class="menu__item"><a class="menu__link" href="#vip">VIP туры</a></li>
+                <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
+                <li class="menu__item"><a class="menu__link" href="#news">Новости</a></li>
               </ul>
             </div>
             <div class="footer__items">
