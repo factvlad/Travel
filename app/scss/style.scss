@@ -4,6 +4,42 @@
 @import "libs";
 @import "global";
 
+.breadcrumbs {
+  text-align: center;
+  margin-top: -100px;
+  margin-left: -14px;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+  &__link {
+    @extend %text-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: $green;
+    &.main {
+      color: $gray-light;
+    }
+  }
+  &__item::after {
+    content: " /";
+    position: absolute;
+    right: 3px;
+    color: $gray-light;
+  }
+  &__item:last-child::after {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    overflow-x: auto;
+  }
+  &__item {
+    position: relative;
+    padding-right: 12px;
+  }
+}
 .title {
   @extend %title-font;
   color: $black;
@@ -300,6 +336,7 @@
 }
 .vip {
   padding-bottom: 126px;
+ 
   &__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -325,6 +362,9 @@
     }
   }
   &__form {
+    &.self {
+      margin-bottom: 126px;
+    }
     width: 1004px;
     height: 200px;
     border-radius: 20px;
