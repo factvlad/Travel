@@ -856,6 +856,19 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
+    margin-bottom: 10px;
+  }
+  &__creater {
+    @extend %text-font;
+    color: $white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-creater__link {
+    text-decoration: underline;
+    color: rgb(131, 125, 127);
   }
 }
 
