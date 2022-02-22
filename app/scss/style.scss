@@ -859,11 +859,14 @@
   }
 }
 
+.country {
+  height: 581px;
+  margin-bottom: 86px;
+}
+
 .country,
 .hotel {
   width: 1105px;
-  height: 581px;
-  margin-bottom: 125px;
   &__title {
     margin-bottom: 56px;
   }
@@ -901,7 +904,7 @@
 }
 
 .hotel {
-  margin-bottom: 0;
+  margin-bottom: 86px;
   &__title {
     @extend %text-font;
     font-style: normal;
