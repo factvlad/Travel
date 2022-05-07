@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <title>Travel</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <title>Emerald Tours</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
 
@@ -32,19 +32,15 @@
             </ul>
           </nav>
           <div class="header__lang">
-            <button class="header__button active">
-              <a class="header__button-link active" href="">Рус</a>
-            </button>
-            <button class="header__button">
-              <a class="header__button-link" href="">Укр</a>
-            </button>
+            <a class="header__button-link active" href="">Рус</a>
+            <a class="header__button-link" href="">Укр</a>
           </div>
         </div>
         <div class="header__content">
-          <h1 class="content__title" id="">
+          <h1 class="content__title">
             <span>Горячие</span> цены на <span>горящие</span> туры только у нас
           </h1>
-          <a class="content__button-link" href="#" target="_blank"
+          <a class="content__button-link" href="#form" target="_blank"
             >Подобрать тур</a
           >
         </div>
@@ -137,66 +133,108 @@
           </div>
         </section>
 
-
-        <section class="popular" id="popular" >
+        <section class="popular" id="popular">
           <div class="popular__container">
             <h2 class="popular__title title">Популярные направления</h2>
             <div class="popular__egp">
               <h3 class="popular__info-title">Египет</h3>
               <div class="popular__info">
                 <div class="popular__info-text">
-                  <p class="popular__info-p">Чем привлекает туристов Египет? В Египте находится одно из семи чудес древнего мира – Великая пирамида в Гизе (Пирамида Хеопса). Это единственное из всех семи чудес, которое сохранилось до наших дней.</p>
-               <p class="popular__info-p"> Страна омывается водами как Красного, так и Средиземного морей. По территории Египта протекает самая длинная река в мире — Нил. Длинна ее составляет 6671 км.
-              </p>
-              <p class="popular__info-p">Покупайтесь в море и посмотрите на одно из самых масштабных строений человечества — египетские пирамиды!
-              </p>
+                  <p class="popular__info-p">
+                    Чем привлекает туристов Египет? В Египте находится одно из
+                    семи чудес древнего мира – Великая пирамида в Гизе (Пирамида
+                    Хеопса). Это единственное из всех семи чудес, которое
+                    сохранилось до наших дней.
+                  </p>
+                  <p class="popular__info-p">
+                    Страна омывается водами как Красного, так и Средиземного
+                    морей. По территории Египта протекает самая длинная река в
+                    мире — Нил. Длинна ее составляет 6671 км.
+                  </p>
+                  <p class="popular__info-p">
+                    Покупайтесь в море и посмотрите на одно из самых масштабных
+                    строений человечества — египетские пирамиды!
+                  </p>
                 </div>
-                <img class="popular__info-img" src="images/popular/egpjpg.jpg" alt="egp">
+                <img
+                  class="popular__info-img"
+                  src="images/popular/egpjpg.jpg"
+                  alt="egp"
+                />
               </div>
               <div class="popular__slider">
-                <h3 class="popular__slider-title">ТОП-5 лучших отелей Египта</h3>
+                <h3 class="popular__slider-title">
+                  ТОП-5 лучших отелей Египта
+                </h3>
                 <div class="popular__slider-list" id="child">
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/egp/rixos.png" alt="rixos">
-                    <h3 class="popular__slider-name">Rixos Premium Seagate 5* </h3>
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/egp/rixos.png"
+                      alt="rixos"
+                    />
+                    <h3 class="popular__slider-name">
+                      Rixos Premium Seagate 5*
+                    </h3>
                     <p class="popular__slider-local">Египет, Шарм-эль-Шейх</p>
-                    <div class="popular__slider-star "></div>
-                    <a class="popular__slider-btn" href="new.html">Узнать цену</a>
+                    <div class="popular__slider-star"></div>
+                    <a class="popular__slider-btn" href="hotels/rixos.html"
+                      >Узнать цену</a
+                    >
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/egp/sultan.jpg" alt="sultan">
-                    <h3 class="popular__slider-name">Sultan Gardens Resort 5* </h3>
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/egp/sultan.jpg"
+                      alt="sultan"
+                    />
+                    <h3 class="popular__slider-name">
+                      Sultan Gardens Resort 5*
+                    </h3>
                     <p class="popular__slider-local">Египет, Шарм-эль-Шейх</p>
                     <div class="popular__slider-star"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/egp/charmillion.jpg" alt="charmillion">
-                    <h3 class="popular__slider-name">Charmillion Garden Aqua Park 5*</h3>
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/egp/charmillion.jpg"
+                      alt="charmillion"
+                    />
+                    <h3 class="popular__slider-name">
+                      Charmillion Garden Aqua Park 5*
+                    </h3>
                     <p class="popular__slider-local">Египет, Шарм-эль-Шейх</p>
-                    <div class="popular__slider-star "></div>
+                    <div class="popular__slider-star"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/egp/albatros.jpg" alt="albatros">
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/egp/albatros.jpg"
+                      alt="albatros"
+                    />
                     <h3 class="popular__slider-name">Nubian Village Aqua 5*</h3>
                     <p class="popular__slider-local">Египет, Шарм-эль-Шейх</p>
-                    <div class="popular__slider-star "></div>
+                    <div class="popular__slider-star"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/egp/nubian.jpg" alt="nubian">
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/egp/nubian.jpg"
+                      alt="nubian"
+                    />
                     <h3 class="popular__slider-name">Albatros Aqua Blue 4*</h3>
                     <p class="popular__slider-local">Египет, Шарм-эль-Шейх</p>
                     <div class="popular__slider-star four"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
-               
                 </div>
               </div>
             </div>
@@ -205,86 +243,131 @@
               <h3 class="popular__info-title turkey">Турция</h3>
               <div class="popular__info turkey">
                 <div class="popular__info-text">
-                  <p class="popular__info-p">Воспользуйтесь уникальной возможностью соединить  отдых на море с шопингом, насладившись турецким гостеприимством и вкусным «all inclusive».
+                  <p class="popular__info-p">
+                    Воспользуйтесь уникальной возможностью соединить отдых на
+                    море с шопингом, насладившись турецким гостеприимством и
+                    вкусным «all inclusive».
                   </p>
-               <p class="popular__info-p"> Grand Bazaar в Стамбуле один из крупнейших крытых рынков в мире..На 66 улицах базара расположено более 4000 магазинов. Ежедневно его посещает свыше полумиллиона посетителей и туристов.
-              </p>
-              <p class="popular__info-p">На турецком побережье можно найти пляжи едва ли не всех видов — это и песчаные пляжи Белека и Сиде, и каменистые бухты Кемера и Анталии. На пляжах Эгейского моря преобладает галька. 
-              </p>
+                  <p class="popular__info-p">
+                    Grand Bazaar в Стамбуле один из крупнейших крытых рынков в
+                    мире..На 66 улицах базара расположено более 4000 магазинов.
+                    Ежедневно его посещает свыше полумиллиона посетителей и
+                    туристов.
+                  </p>
+                  <p class="popular__info-p">
+                    На турецком побережье можно найти пляжи едва ли не всех
+                    видов — это и песчаные пляжи Белека и Сиде, и каменистые
+                    бухты Кемера и Анталии. На пляжах Эгейского моря преобладает
+                    галька.
+                  </p>
                 </div>
-                <img class="popular__info-img" src="images/popular/turkey.jpg" alt="turkey">
+                <img
+                  class="popular__info-img"
+                  src="images/popular/turkey.jpg"
+                  alt="turkey"
+                />
               </div>
               <div class="popular__slider">
-                <h3 class="popular__slider-title">ТОП-5 лучших отелей Турции</h3>
+                <h3 class="popular__slider-title">
+                  ТОП-5 лучших отелей Турции
+                </h3>
                 <div class="popular__slider-list">
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/turkey/rixos.jpg" alt="rixos">
-                    <h3 class="popular__slider-name">Rixos Premium Tekirova 5*</h3>
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/turkey/rixos.jpg"
+                      alt="rixos"
+                    />
+                    <h3 class="popular__slider-name">
+                      Rixos Premium Tekirova 5*
+                    </h3>
                     <p class="popular__slider-local">Турция, Текирова</p>
-                    <div class="popular__slider-star "></div>
-                    <a class="popular__slider-btn" href="new.html">Узнать цену</a>
+                    <div class="popular__slider-star"></div>
+                    <a
+                      class="popular__slider-btn"
+                      href="hotels/turkish/rixos.html"
+                      >Узнать цену</a
+                    >
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/egp/sultan.jpg" alt="sultan">
-                    <h3 class="popular__slider-name">Ela Quality Resort 5*  </h3>
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/egp/sultan.jpg"
+                      alt="sultan"
+                    />
+                    <h3 class="popular__slider-name">Ela Quality Resort 5*</h3>
                     <p class="popular__slider-local">Турция, Белек</p>
                     <div class="popular__slider-star"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/turkey/marti.jpg" alt="marti">
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/turkey/marti.jpg"
+                      alt="marti"
+                    />
                     <h3 class="popular__slider-name">Marti Myra 5*</h3>
                     <p class="popular__slider-local">Турция, Кемер</p>
-                    <div class="popular__slider-star "></div>
+                    <div class="popular__slider-star"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/turkey/alva.jpg" alt="alva">
-                    <h3 class="popular__slider-name">Alva Donna Belek Exclusive 5*</h3>
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/turkey/alva.jpg"
+                      alt="alva"
+                    />
+                    <h3 class="popular__slider-name">
+                      Alva Donna Belek Exclusive 5*
+                    </h3>
                     <p class="popular__slider-local">Турция, Белек</p>
-                    <div class="popular__slider-star "></div>
+                    <div class="popular__slider-star"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
                   <div class="popular__slider-item">
                     <div class="popular__slider-child">Отдых с детьми</div>
-                    <img class="popular__slider-img" src="images/popular/turkey/land.jpg" alt="land">
+                    <img
+                      class="popular__slider-img"
+                      src="images/popular/turkey/land.jpg"
+                      alt="land"
+                    />
                     <h3 class="popular__slider-name">Land of Legends 5*</h3>
                     <p class="popular__slider-local">Турция, Белек</p>
                     <div class="popular__slider-star four"></div>
                     <a class="popular__slider-btn" href="">Узнать цену</a>
                   </div>
-               
                 </div>
               </div>
             </div>
-
           </div>
         </section>
-  
-          
+
         <section class="vip" id="vip">
           <div class="vip__container">
             <h2 class="vip__title title">VIP отдых с Emerald Tours</h2>
             <div class="vip__items">
               <div class="vip__item">
-              <a >  <img class="vip__item-img" src="images/vip/1.jpg" alt="" /></a>
-                <p class="vip__item-title">Доминикана</p>
+                <a
+                  ><p class="vip__item-title">Доминикана</p>
+                  <img class="vip__item-img" src="images/vip/1.jpg" alt=""
+                /></a>
               </div>
               <div class="vip__item">
-             <a href="maldives/index.html"><img class="vip__item-img" src="images/vip/2.jpg" alt="" /></a>
-                <p class="vip__item-title">Мальдивы</p>
+                <a href="maldives.html">
+                  <p class="vip__item-title">Мальдивы</p>
+                  <img class="vip__item-img" src="images/vip/2.jpg" alt=""
+                /></a>
               </div>
               <div class="vip__item">
-                <img class="vip__item-img" src="images/vip/3.jpg" alt="" />
                 <p class="vip__item-title">ОАЭ</p>
+                <img class="vip__item-img" src="images/vip/3.jpg" alt="" />
               </div>
               <div class="vip__item">
                 <img class="vip__item-img" src="images/vip/4.jpg" alt="" />
-                <p class="vip__item-title">Сейшелы</p>
               </div>
               <div class="vip__item">
                 <img class="vip__item-img" src="images/vip/5.jpg" alt="" />
@@ -295,168 +378,283 @@
                 <p class="vip__item-title">Мексика</p>
               </div>
             </div>
-            <div class="vip__form">
+            <div class="vip__form" id="form">
               <h3 class="vip__form-title">
                 Мы подберем лучший VIP тур для Вас
               </h3>
-              <input class="vip__input" type="text" name="" id="" placeholder="Имя" />
-              <input
-                class="vip__input"
-                type="number"
-                name=""
-                id=""
-                placeholder="Телефон"
-              />
-              <input class="vip__btn" type="submit" href="" value="Подобрать тур" ></input>
+              <input class="vip__input" type="text" placeholder="Имя" />
+              <input class="vip__input" type="number" placeholder="Телефон" />
+              <input class="vip__btn" type="submit" value="Подобрать тур" />
             </div>
           </div>
         </section>
 
         <section class="about" id="about">
-       <div class="about__container"> 
+          <div class="about__container">
             <div class="about__content">
               <div class="about__items">
-                <h3 class="about__title title">Маленькое агентство
-                  с большой душой...</h3>
-                <p class="about__text">Мы влюблены в нашу работу и всегда рады помочь вам с выбором идеального места для вашего отдыха.
-                  Путешествия - это клад ярких воспоминаний , который будет с вами всю жизнь ! Его никто не сможет украсть, и для того чтобы воспоминания были только положительными и незабываемыми нужны мы - EMERALD Tours.
+                <h3 class="about__title title">
+                  Маленькое агентство с большой душой...
+                </h3>
+                <p class="about__text">
+                  Мы влюблены в нашу работу и всегда рады помочь вам с выбором
+                  идеального места для вашего отдыха. Путешествия - это клад
+                  ярких воспоминаний , который будет с вами всю жизнь ! Его
+                  никто не сможет украсть, и для того чтобы воспоминания были
+                  только положительными и незабываемыми нужны мы - EMERALD
+                  Tours.
                 </p>
-              <p class="about__text">EMERALD Tours это семейное турагентство, мы продаём вам туры, отели, страны ,в которых были сами, понимаем плюсы и минусы ... советуем вам как спланировать ваше путешествие, чтобы были только позитив и восторг! <span>Больше</span></p>
+                <p class="about__text">
+                  EMERALD Tours это семейное турагентство, мы продаём вам туры,
+                  отели, страны ,в которых были сами, понимаем плюсы и минусы
+                  ... советуем вам как спланировать ваше путешествие, чтобы были
+                  только позитив и восторг! <span>Больше</span>
+                </p>
               </div>
-          <div class="about__img-wrapper"> 
-            <div class="about__img-wrapper bottom"><img class="about__img" src="images/about.png" alt="photo"></div>
+              <div class="about__img-wrapper">
+                <div class="about__img-wrapper bottom">
+                  <img class="about__img" src="images/about.png" alt="photo" />
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-  </div>
         </section>
 
-<section class="news" id="news">
-  <div class="news__container">
-    <h2 class="new__title title">Новости для туристов</h2>
-<div class="news__content">
-      <div class="news__items">
-        <p class="news__text">Мы часто путeшествуем сами, ездим в разные страны, посещаем различные курорты, пробуем вкусные и не очень блюда и принимаем участие в необычных развлечениях. И все наши эмоции и впечатления можно узнать на нашей странице в Instagram.  А также последние новости в сфере туризма и разные горящие предложения. Поэтому жми на кнопку и посети наш Instagram.</p>
-    <a  class="news__btn" href="">Читать новости</a>
-  </div>
-  <div class="news__photo">
-    <img  class="news__img" src="images/news/1.png" alt="1">
-    <img  class="news__img" src="images/news/2.png" alt="2">
-    <img  class="news__img" src="images/news/3.png" alt="3">
-  </div>
-</div>
-  </div>
-</section>
-
-<section class="clients">
-  <div class="clients__container">
-    <h2 class="clients__title title">Что говорят наши клиенты</h2>
-    <div class="clients__slider">
-      <div class="clients__slider-item">
-        <div  class="clients__slider-info">
-          <p class="clients__slider-title">Натали Лайк</p>
-          <p class="clients__slider-text">“Отличное турагентство!!! Спасибо вам огромное за подбор тура и осуществление мечты нашего ребенка - совершеннолетие в Италии.
-            Это потрясающая страна и тот тур который вы подобрали, действительно весьма интересен и завораживающие впечитления остались от каждого города.”</p>
+        <section class="news" id="news">
+          <div class="news__container">
+            <h2 class="new__title title">Новости для туристов</h2>
+            <div class="news__content">
+              <div class="news__items">
+                <p class="news__text">
+                  Мы часто путeшествуем сами, ездим в разные страны, посещаем
+                  различные курорты, пробуем вкусные и не очень блюда и
+                  принимаем участие в необычных развлечениях. И все наши эмоции
+                  и впечатления можно узнать на нашей странице в Instagram. А
+                  также последние новости в сфере туризма и разные горящие
+                  предложения. Поэтому жми на кнопку и посети наш Instagram.
+                </p>
+                <a
+                  class="news__btn"
+                  href="https://www.instagram.com/emerald_tours_odessa/"
+                  target="_blank"
+                  >Читать новости</a
+                >
+              </div>
+              <div class="news__photo">
+                <img class="news__img" src="images/news/1.png" alt="1" />
+                <img class="news__img" src="images/news/2.png" alt="2" />
+                <img class="news__img" src="images/news/3.png" alt="3" />
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="clients__slider-item">
-          <div class="clients__slider-info">
-            <p class="clients__slider-title">Михаил Ильченко</p>
-            <p class="clients__slider-text">“С данным агентством летали отдыхать уже второй раз. Приятный и обходительный персонал, готовы всегда оказать помощь от выбора тура, оформления документов, регистрации на рейсы (МАУ) до предоставления полной и достоверной информации о выбраном вами туре.”</p>
+        </section>
+
+        <section class="clients">
+          <div class="clients__container">
+            <h2 class="clients__title title">Что говорят наши клиенты</h2>
+            <div class="clients__slider">
+              <div class="clients__slider-item">
+                <div class="clients__slider-info">
+                  <p class="clients__slider-title">Натали Лайк</p>
+                  <p class="clients__slider-text">
+                    “Отличное турагентство!!! Спасибо вам огромное за подбор
+                    тура и осуществление мечты нашего ребенка - совершеннолетие
+                    в Италии. Это потрясающая страна и тот тур который вы
+                    подобрали, действительно весьма интересен и завораживающие
+                    впечитления остались от каждого города.”
+                  </p>
+                </div>
+              </div>
+              <div class="clients__slider-item">
+                <div class="clients__slider-info">
+                  <p class="clients__slider-title">Михаил Ильченко</p>
+                  <p class="clients__slider-text">
+                    “С данным агентством летали отдыхать уже второй раз.
+                    Приятный и обходительный персонал, готовы всегда оказать
+                    помощь от выбора тура, оформления документов, регистрации на
+                    рейсы (МАУ) до предоставления полной и достоверной
+                    информации о выбраном вами туре.”
+                  </p>
+                </div>
+              </div>
+              <div class="clients__slider-item">
+                <div class="clients__slider-info">
+                  <p class="clients__slider-title">Светлана Байло</p>
+                  <p class="clients__slider-text">
+                    “Спасибо за прекрасную поездку в Каппадокию. Рекомендую всем
+                    кто хочет получить незабываемые впечатления на всю жизнь.
+                    Спасибо Emerald Tours за то что предлагает лучшие в Украине
+                    туры. Ждем новых предложений и благодарны за хороший сервис.
+                    ”
+                  </p>
+                </div>
+              </div>
+              <div class="clients__slider-item">
+                <div class="clients__slider-info">
+                  <p class="clients__slider-title">Ольга Швец</p>
+                  <p class="clients__slider-text">
+                    “Большое спасибо за организацию нашего отдыха. Отдохнули
+                    всей семьёй на все 200%. Спасибо за хорошую организацию
+                    нашего отдыха прекрасные воспоминания и эмоции. ”
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-    </div>
-    <div class="clients__slider-item">
-      <div class="clients__slider-info">
-        <p class="clients__slider-title">Светлана Байло</p>
-        <p class="clients__slider-text">“Спасибо за прекрасную поездку в Каппадокию. Рекомендую всем кто хочет получить незабываемые впечатления на всю жизнь. Спасибо Emerald Tours за то что предлагает лучшие в Украине туры. Ждем новых предложений и благодарны за хороший сервис. ”</p>
-      </div>
-</div>
-<div class="clients__slider-item">
-  <div class="clients__slider-info">
-    <p class="clients__slider-title">Ольга Швец</p>
-    <p class="clients__slider-text">“Большое спасибо за организацию нашего отдыха. Отдохнули всей семьёй на все 200%. Спасибо за хорошую организацию нашего отдыха прекрасные воспоминания и эмоции. ”</p>
-  </div>
-</div>
-  </div>
-</section>
+        </section>
 
-<section class="notime">
-  <div class="notime__container">
-<h2 class="notime__title title"> Нет времени на поиск тура?</h2>
-<p class="notime__text">Наше агентство сделает это для вас совершенно бесплатно и в самые короткие сроки </p>
-<button class="notime__btn">Показать форму</button>
+        <section class="notime">
+          <div class="notime__container">
+            <h2 class="notime__title title">Нет времени на поиск тура?</h2>
+            <p class="notime__text">
+              Наше агентство сделает это для вас совершенно бесплатно и в самые
+              короткие сроки
+            </p>
+            <button class="notime__btn">Показать форму</button>
 
-<div class="popup">
-  <div class="popup__container">
-    <div class="popup__wrapper">
-      <div class="notime__form">
-      <button class="close"></button>
-        <h3 class="notime__form-title">Оставить заявку</h3>
-        <form class="notime__form-form"
-          role="form"
-          action="/requestFine"
-          autocomplete="off"
-          method="POST"
-        >
-          <input  class="notime__form-inp"  type="text" name="nameReq" placeholder="Ваше имя"/>
-          <input  class="notime__form-inp number" type="text" name="lastNameReq" value="+380" />
-          <textarea class="notime__form-tarea" name="" id=""   rows="5" cols="30"  placeholder="Ваши пожелания (например страна, отель, стоимость тура...)"></textarea>
-          <p class="notime__form-info">Отправка этой формы бесплатная и  не обязывает Вас бронировать тур </p>
-          <input class="notime__form-checkbox" type="checkbox" name="check" value="yes">
-          <label class="notime__form-check" for="check">Вы согласны на обработку персональных данных</label>
-          <button type="submit" class="notime__form-btn">Оставить заявку</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-  </div>
-</section>
+            <div class="popup">
+              <div class="popup__container">
+                <div class="popup__wrapper">
+                  <div class="notime__form">
+                    <button class="close"></button>
+                    <h3 class="notime__form-title">Оставить заявку</h3>
+                    <form
+                      class="notime__form-form"
+                      action="/requestFine"
+                      autocomplete="off"
+                      method="POST"
+                    >
+                      <input
+                        class="notime__form-inp"
+                        type="text"
+                        name="nameReq"
+                        placeholder="Ваше имя"
+                      />
+                      <input
+                        class="notime__form-inp number"
+                        type="text"
+                        name="lastNameReq"
+                        value="+380"
+                      />
+                      <textarea
+                        class="notime__form-tarea"
+                        name=""
+                        id=""
+                        rows="5"
+                        cols="30"
+                        placeholder="Ваши пожелания (например страна, отель, стоимость тура...)"
+                      ></textarea>
+                      <p class="notime__form-info">
+                        Отправка этой формы бесплатная и не обязывает Вас
+                        бронировать тур
+                      </p>
+                      <input
+                        class="notime__form-checkbox"
+                        type="checkbox"
+                        name="check"
+                        value="yes"
+                      />
+                      <label class="notime__form-check" for="check">Вы согласны на обработку персональных данных</label>
+                      <button type="submit" class="notime__form-btn">
+                        Оставить заявку
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-
       <footer class="footer">
         <div class="footer__container">
-          <div class="footer__contact " id="contact">
-            <div class="footer__items ">
+          <div class="footer__contact" id="contact">
+            <div class="footer__items">
               <h3 class="footer__title">Офис в Одесе:</h3>
               <p class="footer__text">г. Одесса ул. Армейская 18А, офис 404</p>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.8792990338698!2d30.748207815442345!3d46.451088579125006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633dd3e14dbd9%3A0x920a356157b1dd6!2zMThBLCDQkNGA0LzQtdC50YHQutCw0Y8g0YPQuy4sIDE40JAsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1644921206940!5m2!1sru!2sua" width="298" height="182" style="border:0;border-radius:20px;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.8792990338698!2d30.748207815442345!3d46.451088579125006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633dd3e14dbd9%3A0x920a356157b1dd6!2zMThBLCDQkNGA0LzQtdC50YHQutCw0Y8g0YPQuy4sIDE40JAsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1644921206940!5m2!1sru!2sua"
+                width="298"
+                height="182"
+                style="border: 0; border-radius: 20px"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
             </div>
             <div class="footer__items">
               <h3 class="footer__title">Меню:</h3>
-              <ul class="footer__menu" >
-                <li class="menu__item"><a class="menu__link" href="#child">Отдых с детьми</a></li>
-                <li class="menu__item"><a class="menu__link" href="#vip">VIP туры</a></li>
-                <li class="menu__item"><a class="menu__link" href="#about">О нас</a></li>
-                <li class="menu__item"><a class="menu__link" href="#news">Новости</a></li>
+              <ul class="footer__menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="#child">Отдых с детьми</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#vip">VIP туры</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#about">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#news">Новости</a>
+                </li>
               </ul>
             </div>
             <div class="footer__items">
               <h3 class="footer__title">Контакты:</h3>
-              <ul class="footer__menu" >
-                <li class="menu__item"><a class="menu__link" href="tel:+380935769992">+38 (093) 576 99 92</a></li>
-                <li class="menu__item"><a class="menu__link" href="tel:+380935343177">+38 (093) 534 31 77</a></li>
-                <li class="menu__item"><a class="menu__link" href="mailto:emeraldtours@ukr.net">emeraldtours@ukr.net </a></li>
+              <ul class="footer__menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="tel:+380935769992"
+                    >+38 (093) 576 99 92</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="tel:+380935343177"
+                    >+38 (093) 534 31 77</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="mailto:emeraldtours@ukr.net"
+                    >emeraldtours@ukr.net
+                  </a>
+                </li>
               </ul>
-              <div class="footer__social">  
-                <a class="footer__social-item" href="https://www.instagram.com/emerald_tours_odessa/" target="_blank"><img class="footer__social-img inst" src="images/instagram.svg" alt="inst"></a>
-                <a class="footer__social-item" href="https://t.me/emeraldtours"  target="_blank"><img class="footer__social-img tg" src="images/telegram.svg" alt="tg"></a>
+              <div class="footer__social">
+                <a
+                  class="footer__social-item"
+                  href="https://www.instagram.com/emerald_tours_odessa/"
+                  target="_blank"
+                  ><img
+                    class="footer__social-img inst"
+                    src="images/instagram.svg"
+                    alt="inst"
+                /></a>
+                <a
+                  class="footer__social-item"
+                  href="https://t.me/emeraldtours"
+                  target="_blank"
+                  ><img
+                    class="footer__social-img tg"
+                    src="images/telegram.svg"
+                    alt="tg"
+                /></a>
               </div>
             </div>
             <div class="footer__items">
               <h3 class="footer__title">Реквизиты для оплаты:</h3>
               <div class="footer__req">
-          <p><span>Наименование получателя:</span></p>
-          <p>ФОП Табашненко Юрій Валентинович</p>
-          <p><span>Код получателя:</span> </p>
-          <p> 2713010796</p>
-          <p><span>Cчет получателя:</span></p>
-          <p>UA413287040000026008054260324</p>
-          <p><span >Название банка:</span></p>
-          <p>ЮЖНЕ ГРУ АТ КБ "ПРИВАТБАНК"</p>
+                <p><span>Наименование получателя:</span></p>
+                <p>ФОП Табашненко Юрій Валентинович</p>
+                <p><span>Код получателя:</span></p>
+                <p>2713010796</p>
+                <p><span>Cчет получателя:</span></p>
+                <p>UA413287040000026008054260324</p>
+                <p><span>Название банка:</span></p>
+                <p>ЮЖНЕ ГРУ АТ КБ "ПРИВАТБАНК"</p>
               </div>
             </div>
           </div>
-          <div class="footer__bot">Туристическое агентство Emerald Tours. Все права защищены. 2022</div> 
+          <div class="footer__bot">
+            Туристическое агентство Emerald Tours. Все права защищены. 2022
+          </div>
           <div class="footer__creater">
             <p>
               Created by
@@ -469,9 +667,9 @@
             </p>
           </div>
         </div>
-      </footer> 
-
+      </footer>
     </div>
     <script src="js/main.min.js"></script>
+    <script src="telegramform/js/telegramform.js"></script>
   </body>
 </html>

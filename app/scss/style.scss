@@ -72,18 +72,18 @@
     gap: 20px;
   }
 
-  &__button {
+  &__button-link {
+    @extend %text-font;
+    justify-content: center;
+    align-items: center;
+    color: $gray;
+    font-size: 16px;
     width: 56px;
     height: 32px;
     background-color: inherit;
     border-radius: 30px;
     border: 1.6px solid $gray;
-  }
-  &__button-link {
-    @extend %text-font;
-    color: $gray;
-    font-size: 16px;
-    line-height: 100%;
+    display: flex;
   }
   .active {
     border-color: $green;
@@ -365,6 +365,7 @@
   &__form {
     &.self {
       margin-bottom: 126px;
+      width: 1004px;
     }
     width: 1004px;
     height: 200px;
@@ -698,7 +699,7 @@
       cursor: pointer;
     }
     &-info {
-      text-align: center;
+      text-align: left;
       @extend %text-font;
       font-style: normal;
       width: 276px;
@@ -878,8 +879,8 @@
 }
 
 .country,
-.hotel {
-  width: 1105px;
+.hotel,
+.apartment {
   &__title {
     margin-bottom: 56px;
   }
@@ -889,12 +890,13 @@
     flex-wrap: nowrap;
   }
   &__slider {
-    width: 554px;
+    width: 590px;
     height: 447px;
   }
   &__info {
-    width: 520px;
+    width: 550px;
     height: 408px;
+    margin-left: 20px;
     &-text {
       @extend %text-font;
       color: $gray-dark;
@@ -908,7 +910,7 @@
   }
 
   .slick-list {
-    margin-right: 15px;
+    margin-right: 16px;
     margin-bottom: 26px;
   }
   .slick-slide {
@@ -934,11 +936,12 @@
       width: 100px;
       height: 17.5px;
       position: absolute;
-      right: 420px;
+      right: 450px;
       top: 35px;
     }
   }
   &__info {
+    margin-left: -20px;
     &-text {
       width: 470px;
     }
@@ -950,5 +953,39 @@
   .slick-list {
     margin-left: 17px;
     margin-right: 0px;
+  }
+}
+.apartment {
+  margin-bottom: 106px;
+  &__title {
+    position: relative;
+    margin-bottom: 100px;
+    &::after {
+      content: "";
+      background-image: url(../images/Star.svg);
+      background-repeat: space;
+      width: 100px;
+      height: 17.5px;
+      position: absolute;
+      left: 47%;
+      top: 60px;
+    }
+  }
+  &__info {
+    margin-left: 10px;
+    &-text {
+      span {
+        @extend %text-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 100%;
+      }
+      width: 490px;
+      margin-bottom: 28px;
+      &:first-child {
+        margin-bottom: 21px;
+      }
+    }
   }
 }
