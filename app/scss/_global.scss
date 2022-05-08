@@ -27,187 +27,62 @@ input {
   margin: 0 auto;
   padding: 0 15px;
 }
-.header__slider .slick-arrow {
-  display: none !important;
-}
 
-.header__slider .slick-dots {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background: #ffffff;
+}
+.loader {
+  width: 40px;
+  height: 40px;
   position: absolute;
+  top: 50%;
   left: 50%;
-  right: 50%;
-  bottom: 20%;
-  button {
-    background-color: $gray-light;
-    border-color: transparent;
-    width: 12px;
-    height: 12px;
-    border-radius: 4px;
-    padding: 0;
-    font-size: 0;
-    cursor: pointer;
+  margin-top: -13px;
+  margin-left: -13px;
+  border-radius: 60px;
+  animation: loader 0.8s linear infinite;
+  -webkit-animation: loader 0.8s linear infinite;
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 4px solid $green;
+    border-left-color: transparent;
   }
-  li.slick-active {
-    button {
-      background-color: $green;
-      width: 13px;
-      height: 13px;
-    }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 4px solid $green;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 4px solid $yellow;
+    border-left-color: transparent;
   }
 }
-
-.clients {
-  .slick-prev,
-  .slick-next {
-    height: 40px;
-    z-index: 1;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    left: 630px;
-    top: 200px;
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    border: 4px solid $green;
+    border-left-color: transparent;
   }
-
-  .slick-prev {
-    left: 78%;
-    &::before {
-      content: "";
-      background-image: url(../images/Star.svg);
-      background-repeat: space;
-      width: 100px;
-      height: 17.5px;
-      position: absolute;
-      right: 467px;
-      bottom: 10px;
-      pointer-events: none;
-    }
+  50% {
+    -webkit-transform: rotate(180deg);
+    border: 4px solid $green;
+    border-left-color: transparent;
   }
-  .slick-next {
-    left: 87.5%;
-  }
-
-  .rect-prev,
-  .rect-next {
-    &.actived {
-      transition: 0.4s;
-      fill: #1dc5a3;
-    }
-  }
-  .path-prev,
-  .path-next {
-    &.actived {
-      transition: 0.4s;
-      stroke: $white;
-    }
-  }
-}
-
-.popular {
-  .slick-slide {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .slick-prev,
-  .slick-next {
-    height: 40px;
-    z-index: 1;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: -50px;
-  }
-
-  .slick-prev {
-    left: 89%;
-  }
-  .slick-next {
-    left: 93.5%;
-  }
-
-  .rect-prev,
-  .rect-next {
-    &.actived {
-      transition: 0.4s;
-      fill: $white;
-    }
-  }
-  .path-prev,
-  .path-next {
-    &.actived {
-      transition: 0.4s;
-      stroke: $green;
-    }
-  }
-  .slick-list {
-    margin-left: -25px;
-    margin-right: -25px;
-    margin-top: -15px;
-    margin-bottom: -15px;
-  }
-}
-.country,
-.hotel,.apartment {
-  .slider-for {
-    img {
-     width: 554px;
-      height: 342px;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-  }
-
-  .slider-nav {
-    img {
-      min-width: 170px;
-      height: 108px;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-  }
-
-  .slick-prev,
-  .slick-next {
-    height: 40px;
-    z-index: 1;
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 35px;
-  }
-
-  .slick-next {
-    left: 86%;
-  }
-
-  .rect-prev,
-  .rect-next {
-    &.actived {
-      transition: 0.4s;
-      fill: $white;
-    }
-  }
-  .path-prev,
-  .path-next {
-    &.actived {
-      transition: 0.4s;
-      stroke: $green;
-    }
-  }
-}
-.hotel {
-  .slick-next {
-    left: 92%;
-  }
-  .slick-prev {
-    left: 6%;
+  100% {
+    -webkit-transform: rotate(360deg);
+    border: 4px solid $yellow;
+    border-left-color: transparent;
   }
 }

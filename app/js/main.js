@@ -1,4 +1,10 @@
 $(function () {
+
+  $(window).on("load", function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
+  });
+
   $(".menu__btn").on("click", function () {
     $(".menu__list").toggleClass("active");
   });
@@ -73,6 +79,18 @@ $(function () {
       dn = $(sc).offset().top;
     $("html, body").animate({ scrollTop: dn }, 1000);
   });
+
+  $(".canvas-open").on("click", function () {
+    $(".offcanvas-menu-wrapper").addClass("show-offcanvas-menu-wrapper");
+    $(".offcanvas-menu-overlay").addClass("active");
+  });
+
+  $(".canvas-close, .offcanvas-menu-overlay, #mobile-menu-wrap").on("click", function () {
+    $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
+    $(".offcanvas-menu-overlay").removeClass("active");
+  });
+
+
 });
 
 const button = document.querySelector(".notime__btn");

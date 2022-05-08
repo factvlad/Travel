@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,10 @@
   </head>
 
   <body>
+    <div id="preloder">
+      <div class="loader"></div>
+    </div>
+
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
@@ -34,12 +38,8 @@
             </ul>
           </nav>
           <div class="header__lang">
-            <button class="header__button active">
-              <a class="header__button-link active" href="">Рус</a>
-            </button>
-            <button class="header__button">
-              <a class="header__button-link" href="">Укр</a>
-            </button>
+            <a class="header__button-link active" href="">Рус</a>
+            <a class="header__button-link" href="">Укр</a>
           </div>
         </div>
       </header>
@@ -54,182 +54,336 @@
                 >
               </li>
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">Rixos Premium Tekirova</a>
+                <p class="breadcrumbs__link" href="#">Rixos Premium Tekirova</p>
               </li>
             </ul>
           </div>
 
           <section class="apartment">
-           <div class="apartment__container">
               <h3 class="apartment__title title">Rixos Premium Tekirova</h3>
               <div class="apartment__content">
                 <div class="apartment__slider">
                   <div class="slider-for">
-                    <div><img src="../images/turkish/hotels/rixos/1.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/2.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/3.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/4.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/5.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/6.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/7.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/8.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/9.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/10.jpg" alt="turkish" /></div>
-                    <div><img src="../images/turkish/hotels/rixos/11.jpg" alt="turkish" /></div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/1.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/2.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/3.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/4.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/5.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/6.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/7.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/8.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/9.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/10.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div>
+                      <img
+                        src="../images/turkish/hotels/rixos/11.jpg"
+                        alt="turkish"
+                      />
+                    </div>
                   </div>
                   <div class="slider-nav">
-                    <div class="item"><img src="../images/turkish/hotels/rixos/1.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/2.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/3.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/4.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/5.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/6.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/7.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/8.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/9.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/10.jpg" alt="turkish" /></div> 
-                    <div class="item"><img src="../images/turkish/hotels/rixos/11.jpg" alt="turkish" /></div> 
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/1.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/2.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/3.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/4.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/5.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/6.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/7.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/8.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/9.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/10.jpg"
+                        alt="turkish"
+                      />
+                    </div>
+                    <div class="item">
+                      <img
+                        src="../images/turkish/hotels/rixos/11.jpg"
+                        alt="turkish"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div class="apartment__info">
-                  <p class="apartment__info-text"><span>Турция, Текирова</span></p>
                   <p class="apartment__info-text">
-                    Этот 5-звездочный отель расположен в поселке Текирова у подножия Таврских гор этот отель известен не только высоким качеством предлагаемого сервиса и услуг, но и прекрасным аква-парком, роскошным SPA-центром, но и одним из лучших в Турции миниклубом Rixy – местом, предназначенным только для детей!
+                    <span>Турция, Текирова</span>
                   </p>
                   <p class="apartment__info-text">
-                    Клуб ориентирован для всех детей от полугода до 17 лет и для каждого возраста здесь найдётся занятие по вкусу и интересу. Детские шоу, дискотеки, пляж, два кинозала, художественная мастерская, верёвочный парк, стена для скалолазания и, конечно же, детский ресторан и бар Yummy!
+                    Этот 5-звездочный отель расположен в поселке Текирова у
+                    подножия Таврских гор этот отель известен не только высоким
+                    качеством предлагаемого сервиса и услуг, но и прекрасным
+                    аква-парком, роскошным SPA-центром, но и одним из лучших в
+                    Турции миниклубом Rixy – местом, предназначенным только для
+                    детей!
                   </p>
                   <p class="apartment__info-text">
-                    У всех номерах отеля Rixos Premium Tekirova окна от пола до потолка,  потому у некоторых из них открывается панорамный вид на Средиземное море. Номера обставлены деревянной мебелью и кондиционером, мини-баром и спутниковым телевидением.
+                    Клуб ориентирован для всех детей от полугода до 17 лет и для
+                    каждого возраста здесь найдётся занятие по вкусу и интересу.
+                    Детские шоу, дискотеки, пляж, два кинозала, художественная
+                    мастерская, верёвочный парк, стена для скалолазания и,
+                    конечно же, детский ресторан и бар Yummy!
+                  </p>
+                  <p class="apartment__info-text">
+                    У всех номерах отеля Rixos Premium Tekirova окна от пола до
+                    потолка, потому у некоторых из них открывается панорамный
+                    вид на Средиземное море. Номера обставлены деревянной
+                    мебелью и кондиционером, мини-баром и спутниковым
+                    телевидением.
                   </p>
                 </div>
               </div>
-           </div>
+            </div>
           </section>
-  
 
-          <div class="vip__form self">
-            <h3 class="vip__form-title">
-              Мы подберем лучший VIP тур для Вас
-            </h3>
-            <input class="vip__input" type="text" name="" id="" placeholder="Имя" />
-            <input
-              class="vip__input"
-              type="number"
-              name=""
-              id=""
-              placeholder="Телефон"
-            />
-            <input class="vip__btn" type="submit" href="" value="Подобрать тур" ></input>
+          <section class="comfort">
+              <div class="comfort__container">
+                <div class="comfort__content">
+                <div class="comfort__items">
+                  <h6 class="comfort__item-title">Тип отеля</h6>
+                  <img class="comfort__img" src="../images/hotels/1.svg" alt="" />
+                  <p class="comfort__text">Пляжный 1 линия (на берегу моря)</p>
+                </div>
+                <div class="comfort__items">
+                  <h6 class="comfort__item-title">Расположение</h6>
+                  <img class="comfort__img" src="../images/hotels/2.svg" alt="" />
+                  <p class="comfort__text">
+                    До аэропорта, км: 73 от аэропорта Анталии До города, км: 17 от
+                    п. Кемер
+                  </p>
+                </div>
+                <div class="comfort__items">
+                  <h6 class="comfort__item-title">Пляж</h6>
+                  <img class="comfort__img" src="../images/hotels/3.svg" alt="" />
+                  <p class="comfort__text">
+                    Песчано-галечный, Собственный, Песок, Галька или камни
+                  </p>
+                </div>
+                <div class="comfort__items">
+                  <h6 class="comfort__item-title">Питание</h6>
+                  <img class="comfort__img" src="../images/hotels/4.svg" alt="" />
+                  <p class="comfort__text">
+                    UAI - все включено Большой выбор разнообразных блюд
+                  </p>
+                </div>
+                </div>
+                </div>
+          </section>
+
+          <div class="form__container">
+            <div class="vip__form self" id="form">
+              <h3 class="vip__form-title">
+                Подобрать тур в этом отеле
+              </h3>
+              <input class="vip__input" type="text" placeholder="Имя" />
+              <input class="vip__input" type="number" placeholder="Телефон" />
+              <input class="vip__btn" type="submit" value="Подобрать тур" />
+            </div>
           </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__contact" id="contact">
+          <div class="footer__items">
+            <h3 class="footer__title">Офис в Одесе:</h3>
+            <p class="footer__text">г. Одесса ул. Армейская 18А, офис 404</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.8792990338698!2d30.748207815442345!3d46.451088579125006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633dd3e14dbd9%3A0x920a356157b1dd6!2zMThBLCDQkNGA0LzQtdC50YHQutCw0Y8g0YPQuy4sIDE40JAsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1644921206940!5m2!1sru!2sua"
+              width="298"
+              height="182"
+              style="border: 0; border-radius: 20px"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="footer__items">
+            <h3 class="footer__title">Меню:</h3>
+            <ul class="footer__menu">
+              <li class="menu__item">
+                <a class="menu__link" href="#child">Отдых с детьми</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#vip">VIP туры</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#about">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="#news">Новости</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__items">
+            <h3 class="footer__title">Контакты:</h3>
+            <ul class="footer__menu">
+              <li class="menu__item">
+                <a class="menu__link" href="tel:+380935769992"
+                  >+38 (093) 576 99 92</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="tel:+380935343177"
+                  >+38 (093) 534 31 77</a
+                >
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="mailto:emeraldtours@ukr.net"
+                  >emeraldtours@ukr.net
+                </a>
+              </li>
+            </ul>
+            <div class="footer__social">
+              <a
+                class="footer__social-item"
+                href="https://www.instagram.com/emerald_tours_odessa/"
+                target="_blank"
+                ><img
+                  class="footer__social-img inst"
+                  src="../images/instagram.svg"
+                  alt="inst"
+              /></a>
+              <a
+                class="footer__social-item"
+                href="https://t.me/emeraldtours"
+                target="_blank"
+                ><img
+                  class="footer__social-img tg"
+                  src="../images/telegram.svg"
+                  alt="tg"
+              /></a>
+            </div>
+          </div>
+          <div class="footer__items">
+            <h3 class="footer__title .date-input">Реквизиты для оплаты:</h3>
+            <div class="footer__req">
+              <p><span>Наименование получателя:</span></p>
+              <p>ФОП Табашненко Юрій Валентинович</p>
+              <p><span>Код получателя:</span></p>
+              <p>2713010796</p>
+              <p><span>Cчет получателя:</span></p>
+              <p>UA413287040000026008054260324</p>
+              <p><span>Название банка:</span></p>
+              <p>ЮЖНЕ ГРУ АТ КБ "ПРИВАТБАНК"</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bot">
+          Туристическое агентство Emerald Tours. Все права защищены.
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </div>
+        <div class="footer__creater">
+          <p>
+            Created by
+            <a
+              class="footer-creater__link"
+              href="https://github.com/factvlad/"
+              target="_blank"
+              >Vlad Verb</a
+            >
+          </p>
         </div>
       </div>
+    </footer>
 
-      <footer class="footer">
-        <div class="footer__container">
-          <div class="footer__contact" id="contact">
-            <div class="footer__items">
-              <h3 class="footer__title">Офис в Одесе:</h3>
-              <p class="footer__text">г. Одесса ул. Армейская 18А, офис 404</p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2748.8792990338698!2d30.748207815442345!3d46.451088579125006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633dd3e14dbd9%3A0x920a356157b1dd6!2zMThBLCDQkNGA0LzQtdC50YHQutCw0Y8g0YPQuy4sIDE40JAsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1644921206940!5m2!1sru!2sua"
-                width="298"
-                height="182"
-                style="border: 0; border-radius: 20px"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-            <div class="footer__items">
-              <h3 class="footer__title">Меню:</h3>
-              <ul class="footer__menu">
-                <li class="menu__item">
-                  <a class="menu__link" href="../index.html#child"
-                    >Отдых с детьми</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../index.html#vip">VIP туры</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../index.html#about">О нас</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="../index.html#news">Новости</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__items">
-              <h3 class="footer__title">Контакты:</h3>
-              <ul class="footer__menu">
-                <li class="menu__item">
-                  <a class="menu__link" href="tel:+380935769992"
-                    >+38 (093) 576 99 92</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="tel:+380935343177"
-                    >+38 (093) 534 31 77</a
-                  >
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="mailto:emeraldtours@ukr.net"
-                    >emeraldtours@ukr.net
-                  </a>
-                </li>
-              </ul>
-              <div class="footer__social">
-                <a
-                  class="footer__social-item"
-                  href="https://www.instagram.com/emerald_tours_odessa/"
-                  target="_blank"
-                  ><img
-                    class="footer__social-img inst"
-                    src="../images/instagram.svg"
-                    alt="inst"
-                /></a>
-                <a
-                  class="footer__social-item"
-                  href="https://t.me/emeraldtours"
-                  target="_blank"
-                  ><img
-                    class="footer__social-img tg"
-                    src="../images/telegram.svg"
-                    alt="tg"
-                /></a>
-              </div>
-            </div>
-            <div class="footer__items">
-              <h3 class="footer__title">Реквизиты для оплаты:</h3>
-              <div class="footer__req">
-                <p><span>Наименование получателя:</span></p>
-                <p>ФОП Табашненко Юрій Валентинович</p>
-                <p><span>Код получателя:</span></p>
-                <p>2713010796</p>
-                <p><span>Cчет получателя:</span></p>
-                <p>UA413287040000026008054260324</p>
-                <p><span>Название банка:</span></p>
-                <p>ЮЖНЕ ГРУ АТ КБ "ПРИВАТБАНК"</p>
-              </div>
-            </div>
-          </div>
-          <div class="footer__bot">
-           Туристическое агентство Emerald Tours. Все права защищены. 2022
-          </div>
-          <div class="footer__creater">
-            <p>
-              Created by
-              <a
-                class="footer-creater__link"
-                href="https://github.com/factvlad/"
-                target="_blank"
-                >Vlad Verb</a
-              >
-            </p>
-          </div>
-        </div>
-      </footer>
-    </div>
     <script src="../js/main.min.js"></script>
   </body>
 </html>

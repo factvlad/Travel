@@ -1,0 +1,185 @@
+.header__slider .slick-arrow {
+    display: none !important;
+  }
+  
+  .header__slider .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 20%;
+    button {
+      background-color: $gray-light;
+      border-color: transparent;
+      width: 12px;
+      height: 12px;
+      border-radius: 4px;
+      padding: 0;
+      font-size: 0;
+      cursor: pointer;
+    }
+    li.slick-active {
+      button {
+        background-color: $green;
+        width: 13px;
+        height: 13px;
+      }
+    }
+  }
+  
+  .clients {
+    .slick-prev,
+    .slick-next {
+      height: 40px;
+      z-index: 1;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      position: absolute;
+      left: 630px;
+      top: 200px;
+    }
+  
+    .slick-prev {
+      left: 78%;
+      &::before {
+        content: "";
+        background-image: url(../images/Star.svg);
+        background-repeat: space;
+        width: 100px;
+        height: 17.5px;
+        position: absolute;
+        right: 467px;
+        bottom: 10px;
+        pointer-events: none;
+      }
+    }
+    .slick-next {
+      left: 87.5%;
+    }
+  
+    .rect-prev,
+    .rect-next {
+      &.actived {
+        transition: 0.4s;
+        fill: #1dc5a3;
+      }
+    }
+    .path-prev,
+    .path-next {
+      &.actived {
+        transition: 0.4s;
+        stroke: $white;
+      }
+    }
+  }
+  
+  .popular {
+    .slick-slide {
+      margin-left: 25px;
+      margin-right: 25px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+  
+    .slick-prev,
+    .slick-next {
+      height: 40px;
+      z-index: 1;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      top: -50px;
+    }
+  
+    .slick-prev {
+      left: 89%;
+    }
+    .slick-next {
+      left: 93.5%;
+    }
+  
+    .rect-prev,
+    .rect-next {
+      &.actived {
+        transition: 0.4s;
+        fill: $white;
+      }
+    }
+    .path-prev,
+    .path-next {
+      &.actived {
+        transition: 0.4s;
+        stroke: $green;
+      }
+    }
+    .slick-list {
+      margin-left: -25px;
+      margin-right: -25px;
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+  }
+  .country,
+  .hotel,
+  .apartment {
+    .slider-for {
+      img {
+        width: 554px;
+        height: 342px;
+        border-radius: 10px;
+      }
+    }
+  
+    .slider-nav {
+      img {
+        min-width: 170px;
+        height: 105px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+  
+    .slick-prev,
+    .slick-next {
+      height: 40px;
+      z-index: 1;
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      position: absolute;
+      top: 35px;
+    }
+  
+    .slick-next {
+      left: 86%;
+    }
+  
+    .rect-prev,
+    .rect-next {
+      &.actived {
+        transition: 0.4s;
+        fill: $white;
+      }
+    }
+    .path-prev,
+    .path-next {
+      &.actived {
+        transition: 0.4s;
+        stroke: $green;
+      }
+    }
+  }
+  .hotel {
+    .slick-next {
+      left: 92%;
+    }
+    .slick-prev {
+      left: 6%;
+    }
+  }
+  
