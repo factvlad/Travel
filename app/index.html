@@ -9,78 +9,50 @@
   </head>
 
   <body>
-
     <div id="preloder">
       <div class="loader"></div>
     </div>
 
-
-    <div class="offcanvas-menu-overlay">
-    </div>
+    <div class="offcanvas-menu-overlay"></div>
     <div class="canvas-open">
-      <img src="images/menu1.svg" alt="open">
+      <img src="images/menu1.svg" alt="open" />
     </div>
     <div class="offcanvas-menu-wrapper">
       <div class="canvas-close">
-        <img src="images/close.svg" alt="closed">
+        <img src="images/close.svg" alt="closed" />
       </div>
 
       <div class="header-configure-area">
-        <!-- <div class="language-option">
-          <img class="flag__bg" src="../img/flag__bg.png" alt="flag" />
-          <span>BG <i class="fa fa-angle-down"></i></span>
-          <div class="flag-dropdown">
-            <ul>
-              <li>
-                <a class="link" href="en/rooms/room-details"
-                  ><img
-                    src="../img/flag.jpg"
-                    alt="flag__bg"
-                  />EN </a
-                >
-              </li>
-            </ul>
-          </div>
-        </div> -->
+        <div class="language-option">
+          <a class="header__button-link active" href="">Рус</a>
+          <a class="header__button-link" href="">Укр</a>
+        </div>
       </div>
       <nav class="mainmenu mobile-menu">
         <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="index.html#about">About Us</a></li>
-          <li><a href="index.html#services">Our Services</a></li>
-          <li><a href="index.html#rooms">Rooms</a></li>
-          <li><a href="#contacts">Contact</a></li>
+          <li>
+            <a class="menu__link" href="index.html#popular">Популярные</a>
+          </li>
+          <li><a class="menu__link" href="index.html#vip">VIP туры</a></li>
+          <li><a class="menu__link" href="index.html#about">О нас</a></li>
+          <li><a class="menu__link" href="index.html#contact">Контакты</a></li>
         </ul>
       </nav>
-      <div id="mobile-menu-wrap"></div>
-      <div class="top-social">
-        <a href="https://www.facebook.com/bulgarkaguesthouse/" target="_blank"
-          ><i class="fa fa-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/bulgarkaguesthouse/" target="_blank"
-          ><i class="fa fa-instagram"></i
-        ></a>
-        <a href="viber://chat?number=+359877072600" target="_blank">
-          <i class="fa fa-whatsapp"></i
-        ></a>
+      <div class="mobile-menu__social">
+        <a
+          href="https://www.instagram.com/emerald_tours_odessa/"
+          target="_blank"
+          ><img src="images/instagram_mob.svg" alt="inst"
+        /></a>
+        <a href="https://t.me/emeraldtours" target="_blank"
+          ><img src="images/telegram_mob.svg" alt="tg"
+        /></a>
       </div>
-      <!-- <ul class="top-widget">
-        <li>
-          <i class="fa fa-phone"></i> <a href="tel:+0877072600">35987 707 2600</a>
-        </li>
-        <li>
-          <i class="fa fa-envelope"></i>
-          <a href="mailto:bulgarkaguesthouse@abv.bg"
-            >BULGARKAGUESTHOUSE@ABV.BG1</a
-          >
-        </li>
-      </ul> -->
+      <div id="mobile-menu-wrap"></div>
     </div>
 
-
-
     <div class="wrapper">
-      <header class="header">
+      <!-- <header class="header">
         <div class="header__container">
           <div class="header__logo">
             <img class="header__img" src="./images/logo.png" alt="" />
@@ -145,10 +117,10 @@
             />
           </div>
         </div>
-      </header>
+      </header> -->
 
       <main class="main">
-        <section class="why-we">
+        <!-- <section class="why-we">
           <div class="why-we__container">
             <h2 class="why-we__title title">Почему Emerald Tours</h2>
             <div class="why-we__content">
@@ -201,9 +173,9 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> 
 
-        <section class="popular" id="popular">
+         <section class="popular" id="popular">
           <div class="popular__container">
             <h2 class="popular__title title">Популярные направления</h2>
             <div class="popular__egp">
@@ -414,7 +386,8 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> 
+        
 
         <section class="vip" id="vip">
           <div class="vip__container">
@@ -458,7 +431,7 @@
               <input class="vip__btn" type="submit" value="Подобрать тур" />
             </div>
           </div>
-        </section>
+        </section>-->
 
         <section class="about" id="about">
           <div class="about__container">
@@ -519,7 +492,7 @@
             </div>
           </div>
         </section>
-
+        <!-- 
         <section class="clients">
           <div class="clients__container">
             <h2 class="clients__title title">Что говорят наши клиенты</h2>
@@ -626,7 +599,9 @@
                         name="check"
                         value="yes"
                       />
-                      <label class="notime__form-check">Вы согласны на обработку персональных данных</label>
+                      <label class="notime__form-check"
+                        >Вы согласны на обработку персональных данных</label
+                      >
                       <button type="submit" class="notime__form-btn">
                         Оставить заявку
                       </button>
@@ -636,10 +611,10 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </main>
-      
-      <footer class="footer">
+
+      <!-- <footer class="footer">
         <div class="footer__container">
           <div class="footer__contact" id="contact">
             <div class="footer__items">
@@ -726,7 +701,8 @@
             </div>
           </div>
           <div class="footer__bot">
-            Туристическое агентство Emerald Tours. Все права защищены.     <script>
+            Туристическое агентство Emerald Tours. Все права защищены.
+            <script>
               document.write(new Date().getFullYear());
             </script>
           </div>
@@ -742,9 +718,10 @@
             </p>
           </div>
         </div>
-      </footer>
+      </footer>  -->
     </div>
+
+    <script src="js/main.min.js"></script>
+    <script src="telegramform/js/telegramform.js"></script>
   </body>
-  <script src="js/main.min.js"></script>
-  <script src="telegramform/js/telegramform.js"></script>
 </html>

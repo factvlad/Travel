@@ -1,5 +1,4 @@
 $(function () {
-
   $(window).on("load", function () {
     $(".loader").fadeOut();
     $("#preloder").delay(200).fadeOut("slow");
@@ -30,33 +29,55 @@ $(function () {
     autoplay: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+      {
+        breakpoint: 461,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+        }
+      },
+    ],
     prevArrow:
       "<button type='button' class='slick-prev'><svg  class='prev' width='53' height='53' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_376_1053)'><rect class='rect-prev' x='8.5' y='8.56641' width='36' height='36' rx='6' fill='white'/></g><path class='path-prev' d='M28.5 32.5664L22.5 26.5664L28.5 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_376_1053' x='0.5' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_376_1053'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_376_1053' result='shape'/></filter></defs></svg></button>",
     nextArrow:
       "<button type='button' class='slick-next'> <svg class='next' width='53' height='53' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_469_10924)'><rect class='rect-next' width='36' height='36' rx='6' transform='matrix(-1 0 0 1 44.4688 8.56641)' fill='white'/></g><path class='path-next' d='M24.4688 32.5664L30.4688 26.5664L24.4688 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_469_10924' x='0.46875' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_469_10924'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_469_10924' result='shape'/></filter></defs></svg></button> ",
   });
 
-  $('.slider-for').slick({
+  $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav',
+    asNavFor: ".slider-nav",
   });
-  $('.slider-nav').slick({
+  $(".slider-nav").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    asNavFor: '.slider-for',
+    asNavFor: ".slider-for",
     dots: false,
     centerMode: false,
     focusOnSelect: true,
     prevArrow:
-    "<button type='button' class='slick-prev'><svg  class='prev' width='32' height='32' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_376_1053)'><rect class='rect-prev' x='8.5' y='8.56641' width='36' height='36' rx='6' fill='white'/></g><path class='path-prev' d='M28.5 32.5664L22.5 26.5664L28.5 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_376_1053' x='0.5' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_376_1053'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_376_1053' result='shape'/></filter></defs></svg></button>",
-  nextArrow:
-    "<button type='button' class='slick-next'> <svg class='next' width='32' height='32' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_469_10924)'><rect class='rect-next' width='36' height='36' rx='6' transform='matrix(-1 0 0 1 44.4688 8.56641)' fill='white'/></g><path class='path-next' d='M24.4688 32.5664L30.4688 26.5664L24.4688 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_469_10924' x='0.46875' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_469_10924'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_469_10924' result='shape'/></filter></defs></svg></button> ",
+      "<button type='button' class='slick-prev'><svg  class='prev' width='32' height='32' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_376_1053)'><rect class='rect-prev' x='8.5' y='8.56641' width='36' height='36' rx='6' fill='white'/></g><path class='path-prev' d='M28.5 32.5664L22.5 26.5664L28.5 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_376_1053' x='0.5' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_376_1053'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_376_1053' result='shape'/></filter></defs></svg></button>",
+    nextArrow:
+      "<button type='button' class='slick-next'> <svg class='next' width='32' height='32' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_469_10924)'><rect class='rect-next' width='36' height='36' rx='6' transform='matrix(-1 0 0 1 44.4688 8.56641)' fill='white'/></g><path class='path-next' d='M24.4688 32.5664L30.4688 26.5664L24.4688 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_469_10924' x='0.46875' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_469_10924'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_469_10924' result='shape'/></filter></defs></svg></button> ",
   });
-
 
   $(".slick-prev").hover(function () {
     $(".rect-prev").toggleClass("actived");
@@ -85,12 +106,13 @@ $(function () {
     $(".offcanvas-menu-overlay").addClass("active");
   });
 
-  $(".canvas-close, .offcanvas-menu-overlay, #mobile-menu-wrap").on("click", function () {
-    $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
-    $(".offcanvas-menu-overlay").removeClass("active");
-  });
-
-
+  $(".canvas-close, .offcanvas-menu-overlay, #mobile-menu-wrap").on(
+    "click",
+    function () {
+      $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
+      $(".offcanvas-menu-overlay").removeClass("active");
+    }
+  );
 });
 
 const button = document.querySelector(".notime__btn");
