@@ -124,7 +124,6 @@
       display: inline-block;
       border-radius: 30px;
       padding: 19px 0px;
-
     }
   }
 
@@ -785,6 +784,11 @@
 .footer {
   padding: 48px 0 16px;
   background-color: $gray-dark;
+  a {
+    &:hover {
+      color: $green;
+    }
+  }
   &__contact {
     display: flex;
     justify-content: space-between;
