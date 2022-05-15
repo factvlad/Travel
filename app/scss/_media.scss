@@ -35,6 +35,34 @@
       }
     }
   }
+
+  .about {
+    &__content {
+      justify-content: center;
+    }
+    &__img-wrapper,
+    &__img-wrapper.bottom {
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    &__items {
+      width: 300px;
+    }
+  }
+
+  .news {
+    margin-bottom: 50px;
+    &__img:last-child {
+      left: -455px;
+      top: 290px;
+    }
+    &__img:nth-child(2) {
+      left: -200px;
+      top: 200px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -204,11 +232,38 @@
       order: 4;
     }
   }
+
+  .about {
+    &__img {
+      position: relative;
+      right: 25px;
+      top: 45px;
+    }
+    &__text {
+      width: 365px;
+    }
+    &__title {
+      width: 400px;
+    }
+  }
 }
 
 @media (max-width: 769px) {
   .title {
     font-size: 42px;
+  }
+
+  .about {
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 45px;
+      padding: 70px 0px 55px;
+    }
+    &__img {
+      right: 0px;
+      top: 5px;
+    }
   }
 
   .popular {
@@ -264,6 +319,71 @@
       margin-left: 0;
     }
   }
+
+  .news {
+    &__content {
+      justify-content: center;
+    }
+    &__img {
+      display: none;
+    }
+    &__items {
+      width: 370px;
+    }
+    &__btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .notime {
+    &__form .close {
+      position: relative;
+      top: 10px;
+      right: 25px;
+      float: right;
+    }
+  }
+
+  .clients {
+    &__slider {
+      height: 330px;
+      &-item {
+        margin: 0 auto;
+        text-align: center;
+      }
+      &-info {
+        width: 380px;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      top: 85%;
+      button {
+        background-color: $gray-light;
+        border-color: transparent;
+        width: 12px;
+        height: 12px;
+        border-radius: 4px;
+        padding: 0;
+        font-size: 0;
+        cursor: pointer;
+      }
+      li.slick-active {
+        button {
+          background-color: $green;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 481px) {
@@ -273,6 +393,7 @@
   }
 
   .header {
+    padding-bottom: 70px;
     .content {
       &__title {
         font-size: 38px;
@@ -409,5 +530,68 @@
     &__text {
       font-size: 14px;
     }
+  }
+
+  .about {
+    margin-bottom: 70px;
+    &__title {
+      width: 290px;
+      font-size: 28px;
+    }
+    &__text {
+      width: 270px;
+    }
+    &__img {
+      right: 0px;
+      top: -25px;
+    }
+  }
+
+  .news {
+    padding-bottom: 70px;
+  }
+
+  .notime {
+    &__form.open {
+      width: 270px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+    &__form-inp,
+    &__form-tarea,
+    &__form-info,
+    &__form-btn {
+      width: 230px;
+    }
+    &__form-check {
+      font-size: 10px;
+    }
+    &__btn {
+      margin-bottom: 70px;
+    }
+  }
+
+  .popup__wrapper {
+    padding: 0;
+  }
+
+  .clients {
+    padding-bottom: 70px;
+    &__slider {
+      height: 400px;
+      &-info {
+        max-width: 230px;
+        width: 300px;
+      }
+      &-text {
+        width: 230px;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .why-we {
+    padding-bottom: 70px;
   }
 }

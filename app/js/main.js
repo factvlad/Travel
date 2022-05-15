@@ -18,6 +18,17 @@ $(function () {
     dots: false,
     fade: true,
     autoplay: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+    ],
     prevArrow:
       "<button  type='button' class='slick-prev'><svg class='prev' width='37' height='37' viewBox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg'><rect class='rect-prev' x='0.921875' y='0.941406' width='36' height='36' rx='6' fill='white'/><path class='path-prev' d='M20.9219 24.9414L14.9219 18.9414L20.9219 12.9414' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></svg></button>",
     nextArrow:
@@ -34,13 +45,13 @@ $(function () {
         breakpoint: 991,
         settings: {
           slidesToShow: 2,
-        }
+        },
       },
       {
         breakpoint: 769,
         settings: {
           slidesToShow: 1,
-        }
+        },
       },
       {
         breakpoint: 461,
@@ -49,7 +60,7 @@ $(function () {
           dots: true,
           prevArrow: false,
           nextArrow: false,
-        }
+        },
       },
     ],
     prevArrow:
