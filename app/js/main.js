@@ -129,7 +129,7 @@ $(function () {
 
     var sc = $(this).attr("href"),
       dn = $(sc).offset().top;
-    $("html, body").animate({ scrollTop: dn }, 1000);
+    $("html, body").animate({ scrollTop: dn }, 1600);
   });
 
   $(".canvas-open").on("click", function () {
@@ -137,13 +137,12 @@ $(function () {
     $(".offcanvas-menu-overlay").addClass("active");
   });
 
-  $(".canvas-close, .offcanvas-menu-overlay, #mobile-menu-wrap").on(
-    "click",
-    function () {
-      $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
-      $(".offcanvas-menu-overlay").removeClass("active");
-    }
-  );
+  $(
+    ".canvas-close, .offcanvas-menu-overlay, #mobile-menu-wrap , .menu__link"
+  ).on("click", function () {
+    $(".offcanvas-menu-wrapper").removeClass("show-offcanvas-menu-wrapper");
+    $(".offcanvas-menu-overlay").removeClass("active");
+  });
 });
 
 const button = document.querySelector(".notime__btn");
