@@ -84,6 +84,26 @@ $(function () {
     dots: false,
     centerMode: false,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+      {
+        breakpoint: 481,
+        settings: {
+          slidesToShow: 1.8,
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+        },
+      },
+    ],
     prevArrow:
       "<button type='button' class='slick-prev'><svg  class='prev' width='32' height='32' viewBox='0 0 53 53' fill='none' xmlns='http://www.w3.org/2000/svg'><g filter='url(#filter0_d_376_1053)'><rect class='rect-prev' x='8.5' y='8.56641' width='36' height='36' rx='6' fill='white'/></g><path class='path-prev' d='M28.5 32.5664L22.5 26.5664L28.5 20.5664' stroke='#9EAAB7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/><defs><filter id='filter0_d_376_1053' x='0.5' y='0.566406' width='52' height='52' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/><feOffset/><feGaussianBlur stdDeviation='4'/><feComposite in2='hardAlpha' operator='out'/><feColorMatrix type='matrix' values='0 0 0 0 0.137255 0 0 0 0 0.164706 0 0 0 0 0.203922 0 0 0 0.2 0'/><feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_376_1053'/><feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_376_1053' result='shape'/></filter></defs></svg></button>",
     nextArrow:

@@ -63,6 +63,55 @@
       top: 200px;
     }
   }
+
+  .vip {
+    &__form {
+      width: 730px;
+      height: 270px;
+    }
+    &__input{
+      margin-left: 70px;
+      margin-bottom: 40px;
+    }
+    &__btn{
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .country,
+  .hotel {
+    img {
+      max-width: 99%;
+    }
+    height: 100%;
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__slider {
+      height: 100%;
+    }
+    &__info {
+      margin-left: -34px;
+      &-text {
+        width: auto;
+      }
+    }
+  }
+
+  .hotel {
+    &__info {
+      order: 2;
+      width: 530px;
+      margin: 0 auto;
+    }
+    &__title {
+      &::before {
+        right: 430px;
+      }
+    }
+  }
 }
 
 @media (max-width: 991px) {
@@ -299,7 +348,8 @@
       flex-direction: column;
       align-items: center;
     }
-    &__form {
+    &__form,
+    &__form.self {
       text-align: center;
       display: block;
       width: 328px;
@@ -313,9 +363,6 @@
     }
     &__input {
       margin-bottom: 30px;
-      margin-left: 0;
-    }
-    &__btn {
       margin-left: 0;
     }
   }
@@ -384,6 +431,65 @@
       }
     }
   }
+
+  .country,
+  .hotel {
+    .slick-slide {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    &__info {
+      width: 360px;
+      height: 460px;
+      &-text {
+        width: 390px;
+      }
+    }
+    &__slider {
+      width: 450px;
+      margin-bottom: 40px;
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      top: 115%;
+      button {
+        background-color: $gray-light;
+        border-color: transparent;
+        width: 12px;
+        height: 12px;
+        border-radius: 4px;
+        padding: 0;
+        font-size: 0;
+        cursor: pointer;
+      }
+      li.slick-active {
+        button {
+          background-color: $green;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+
+  .hotel {
+    &__title {
+      &::before {
+        right: 260px;
+        top: 60px;
+      }
+    }
+  }
+
+  .breadcrumbs {
+    margin-top: -60px;
+  }
 }
 
 @media (max-width: 481px) {
@@ -393,7 +499,7 @@
   }
 
   .header {
-    padding-bottom: 70px;
+    // padding-bottom: 70px;
     .content {
       &__title {
         font-size: 38px;
@@ -498,7 +604,8 @@
   }
 
   .vip {
-    &__form {
+    &__form,
+    &__form.self {
       width: 275px;
       &-title {
         font-size: 21px;
@@ -593,5 +700,39 @@
 
   .why-we {
     padding-bottom: 70px;
+  }
+
+  .country,
+  .hotel {
+    .slider-for img {
+      width: 260px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    .slick-list {
+      margin: 25px;
+    }
+    .slick-slide {
+      width: 20%;
+    }
+    &__info {
+      width: 240px;
+      height: 670px;
+      &-text {
+        width: 270px;
+      }
+    }
+    &__slider {
+      width: 450px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .hotel {
+    &__title {
+      &::before {
+        right: 140px;
+      }
+    }
   }
 }
