@@ -77,7 +77,7 @@
       margin: 0 auto;
       display: block;
     }
-    &__form.self{
+    &__form.self {
       width: 720px;
       height: 270px;
     }
@@ -134,6 +134,39 @@
     &__slider {
       margin-bottom: 75px;
       margin-right: 62px;
+    }
+  }
+
+  .apartment {
+    img {
+      max-width: 99%;
+    }
+    height: 100%;
+    &__content {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__slider {
+      height: 100%;
+    }
+    &__info {
+      width: 610px;
+      margin-right: 55px;
+      &-text {
+        width: 560px;
+      }
+    }
+  }
+
+  .comfort {
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(2, 0fr);
+      grid-gap: 10px;
+      justify-items: stretch;
+      align-items: center;
+      justify-content: space-evenly;
+      align-content: stretch;
     }
   }
 }
@@ -560,6 +593,71 @@
   .breadcrumbs {
     margin-top: -60px;
   }
+
+  .comfort {
+    &__content {
+      display: flex;
+      gap: 40px;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+
+  .apartment {
+    .slick-slide {
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+    &__info {
+      margin: 0 auto 50px auto;
+      width: 430px;
+      height: 460px;
+      &-text {
+        width: 410px;
+      }
+    }
+    &__slider {
+      width: 450px;
+      margin-bottom: 40px;
+    }
+    &__slider {
+      margin-bottom: 120px;
+    }
+    &__title {
+      &::before {
+        right: 310px;
+        top: 35px;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      top: 115%;
+      button {
+        background-color: $gray-light;
+        border-color: transparent;
+        width: 12px;
+        height: 12px;
+        border-radius: 4px;
+        padding: 0;
+        font-size: 0;
+        cursor: pointer;
+      }
+      li.slick-active {
+        button {
+          background-color: $green;
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 481px) {
@@ -820,6 +918,35 @@
       &::before {
         right: 140px;
         top: 55px;
+      }
+    }
+  }
+
+  .apartment {
+    .slider-for img {
+      width: 260px;
+      height: 200px;
+      margin: 0 auto;
+    }
+    .slick-list {
+      margin: 25px;
+    }
+    &__info {
+      width: 240px;
+      height: 750px;
+      &-text {
+        width: 240px;
+      }
+    }
+    &__slider {
+      width: 450px;
+      margin-bottom: 50px;
+      margin-right: 0px;
+    }
+    &__title {
+      &::after {
+        left: 30%;
+        top: 100px;
       }
     }
   }
