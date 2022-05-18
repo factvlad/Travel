@@ -125,6 +125,7 @@
       order: 2;
       width: 530px;
       margin-right: 45px;
+      margin-bottom: 100px;
     }
     &__title {
       &::before {
@@ -162,9 +163,9 @@
     &__content {
       display: grid;
       grid-template-columns: repeat(2, 0fr);
-      grid-gap: 10px;
+      grid-gap: 20px;
       justify-items: stretch;
-      align-items: center;
+      align-items: normal;
       justify-content: space-evenly;
       align-content: stretch;
     }
@@ -497,7 +498,7 @@
     &__info {
       margin: 0 auto;
       width: 400px;
-      height: 460px;
+      height: 500px;
       &-text {
         width: 410px;
       }
@@ -543,7 +544,7 @@
     &__info {
       margin: 0 auto;
       width: 430px;
-      height: 460px;
+      height: 500px;
       &-text {
         width: 410px;
       }
@@ -883,6 +884,7 @@
     &__info {
       width: 240px;
       height: 750px;
+      margin-bottom: 100px;
       &-text {
         width: 240px;
       }
@@ -905,6 +907,7 @@
     &__info {
       width: 240px;
       height: 750px;
+      margin-bottom: 100px;
       &-text {
         width: 240px;
       }
@@ -932,8 +935,8 @@
       margin: 25px;
     }
     &__info {
-      width: 240px;
-      height: 750px;
+      height: 800px;
+      margin-bottom: 100px;
       &-text {
         width: 240px;
       }
